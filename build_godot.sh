@@ -8,5 +8,8 @@ scons p=$platform tools=yes module_mono_enabled=yes mono_glue=no
 # Editor
 scons p=$platform target=release_debug tools=yes module_mono_enabled=yes
 # Export templates
-scons p=$platform target=release_debug tools=no module_mono_enabled=yes
+# scons p=$platform target=release_debug tools=no module_mono_enabled=yes
 scons p=$platform target=release tools=no module_mono_enabled=yes
+
+# run Editor
+# ./bin/godot.$platform.opt.tools.64.mono

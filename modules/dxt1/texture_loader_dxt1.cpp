@@ -70,6 +70,7 @@ RES ResourceFormatDXT1::load(const String &p_path, const String &p_original_path
 
 	Ref<ImageTexture> texture = memnew(ImageTexture);
 	texture->create_from_image(img);
+	texture->set_flags(0);
 
 	if (r_error)
 		*r_error = OK;
